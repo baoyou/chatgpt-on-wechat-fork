@@ -276,3 +276,27 @@ FAQs： <https://github.com/zhayujie/chatgpt-on-wechat/wiki/FAQs>
 ## 联系
 
 欢迎提交PR、Issues，以及Star支持一下。程序运行遇到问题可以查看 [常见问题列表](https://github.com/zhayujie/chatgpt-on-wechat/wiki/FAQs) ，其次前往 [Issues](https://github.com/zhayujie/chatgpt-on-wechat/issues) 中搜索。参与更多讨论可加入技术交流群。
+
+## Replicate插件配置
+1. 复制<mark>/plugins/godcmd/config.json.template</mark>到<mark>/plugins/godcmd/config.json<mark>
+2. 配置<mark>/plugins/godcmd/config.json</mark>文件的<mark>password</mark>为bailian(可自定义)
+3. 启动程序，输入<mark>#auth bailian</mark>进行鉴权认证
+4. 认证成功，执行<mark>#installp replicate</mark>安装插件，后续可通过<mark>#updatep replicate</mark>进行更新或重装
+5. 安装成功执行<mark>#scanp</mark>扫描插件
+6. 停止程序
+7. 编辑<mark>/plugins/plugins.json</mark>文件<mark>replicate:enable为true</mark>
+8. 复制<mark>/plugins/plugin_replicate/config.json.template</mark>到<mark>/plugins/plugin_replicate/config.json</mark>，如该文件夹下已有config.json，此步骤可忽略
+9. 访问<https://replicate.com/>申请token
+10. 修改<mark>/plugins/plugin_replicate/config.json</mark>文件，配置<mark>replicate_api_token</mark>为上一步中生成的token
+11. 执行<mark>pip install urllib3==1.26.15</mark>
+12. 启动程序
+13. 输入<mark>#auth bailian</mark>进行鉴权，鉴权成功输入<mark>#plist</mark>查看插件状态
+14. replicate_v0.3.0 - 已启用，则表示安装成功
+
+## midjourney绘画插件配置
+https://github.com/zhayujie/chatgpt-on-wechat/tree/master/plugins/linkai#3%E6%96%87%E6%A1%A3%E6%80%BB%E7%BB%93%E5%AF%B9%E8%AF%9D%E5%8A%9F%E8%83%BD
+
+## 企业微信个人号配置
+### 系统要求：windows、企业微信4.0.8.6027
+### 操作文档：https://github.com/zhayujie/chatgpt-on-wechat/pull/1385
+### ntwork地址：https://github.com/hmmya/ntwork

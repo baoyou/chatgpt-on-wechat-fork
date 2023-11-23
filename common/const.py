@@ -6,6 +6,7 @@ XUNFEI = "xunfei"
 CHATGPTONAZURE = "chatGPTOnAzure"
 LINKAI = "linkai"
 CLAUDEAI = "claude"
+AIDEAS = "aideas"
 
 # model
 GPT35 = "gpt-3.5-turbo"
